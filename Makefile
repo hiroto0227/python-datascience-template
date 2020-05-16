@@ -2,7 +2,6 @@
 build:
   cp .envrc.sample .envrc
   pipenv install
-  echo "Hello"
 
 .PHONY: load-data
 load-data:
