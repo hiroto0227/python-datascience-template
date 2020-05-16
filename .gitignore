@@ -1,5 +1,5 @@
-*.csv
-*.json
 .env
 .envrc
 .venv/
+data/
+.vscode/

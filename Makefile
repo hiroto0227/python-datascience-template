@@ -1,16 +1,24 @@
 .PHONY: build
 build:
-  cp .envrc.sample .envrc
-  pipenv install
+	cp .envrc.sample .envrc
+	direnv allow
+	pipenv install
+	pipenv shell
 
-.PHONY: load-data
-load-data:
+.PHONY: fetch-data
+fetch-data:
 	kaggle datasets download -d datasnaek/youtube-new
-	unzip -d youtube-new youtube-new.zip
+	unzip -d $DATA_DIRECTORY youtube-new.zip
 	rm -rf youtube-new.zip
 
-.PHONY
+.PHONY: test
 test:
-	pipenv run lint
-	pipenv run mypy
 	pipenv run test
+
+.PHONY: lint
+lint:
+	autopep8 -iv `find . -path "*.py"`
+	mypy `find . -path "*.py"`
+
+.PHONY: clean
+	echo "Not Implement"
