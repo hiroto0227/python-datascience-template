@@ -1,0 +1,4 @@
+[flake8]
+#exclude = somefile
+max-line-length = 150
+

@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mypy = "*"
+flake8 = "*"
+autopep8 = "*"
+flake8-import-order = "*"
+
+[packages]
+jupyter = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+sklearn = "*"
+kaggle = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+lint = "flake8 --show-source ."
+format = "autopep8 -ivr ."
