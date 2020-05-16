@@ -1,1 +1,2 @@
 export PROJECT_NAME="youtube_trending"
+export DATA_DIR="data"
