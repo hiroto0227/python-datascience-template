@@ -16,6 +16,7 @@ pandas = "*"
 matplotlib = "*"
 sklearn = "*"
 kaggle = "*"
+pytorch = "*"
 
 [requires]
 python_version = "3.8"

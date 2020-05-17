@@ -3,3 +3,5 @@
 .venv/
 data/
 .vscode/
+.mypy_cache/
+*.ipynb
