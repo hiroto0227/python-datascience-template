@@ -13,7 +13,7 @@ fetch-data:
 
 .PHONY: test
 test:
-	pipenv run test
+	python -m unittest tests/test*.py
 
 .PHONY: lint
 lint:

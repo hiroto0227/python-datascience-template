@@ -1,6 +1,8 @@
 # python-datascience-template
 python-datascience-template
 
+## Require
+- kaggle API ($KAGGLE_USERNAME and $KAGGLE_KEY)
 
 ## Trending Youtube
 https://www.kaggle.com/datasnaek/youtube-new のデータセットで行う。
